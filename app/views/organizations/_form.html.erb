@@ -1,0 +1,6 @@
+
+<%= form_for :organization, url: organizations_path do |f| %>
+  <p><%= f.label "Org Name" %> <%= f.text_field :name %></p>
+  <p><%= f.label "Description" %> <%= f.text_field :description %></p>
+  <p><%= f.button :Submit %>
+<% end %>

@@ -1,0 +1,16 @@
+<h3>Register</h3>
+<%= form_for :user, url: users_path do |f| %>
+  <p><%= f.label "First Name" %> <%= f.text_field :first_name %></p>
+  <p><%= f.label "Last Name" %> <%= f.text_field :last_name %></p>
+  <p><%= f.label "Email" %> <%= f.text_field :email %></p>
+  <p><%= f.label "Password" %> <%= f.text_field :password %></p>
+  <p><%= f.button :Submit %>
+<% end %>
+
+
+<h3>Login</h3>
+<%= form_for :sessions, url: sessions_path do |f| %>
+  <p><%= f.label "Email" %> <%= f.text_field :email %></p>
+  <p><%= f.label "Password" %> <%= f.text_field :password %></p>
+  <p><%= f.button :submit %>
+<% end %>
